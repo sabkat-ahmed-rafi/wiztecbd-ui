@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #09090b;
 }
 
 @theme inline {
@@ -12,15 +12,48 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  background: #ffffff;
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-modal-in {
+  animation: modal-in 0.35s cubic-bezier(0.21, 0.74, 0.34, 0.99);
+}
+
+/* Custom checkbox and radio styling */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #6C0443;
+  cursor: pointer;
+}
+
+.silka {
+  font-family: var(--font-silka), sans-serif;
+}
+
+.alexandria {
+  font-family: var(--font-alexandria), serif;
+}
+
+.clash {
+  font-family: var(--font-clash-display), sans-serif;
+}
+
+.clash-bold {
+  font-family: var(--font-clash-display-bold), sans-serif;
 }
