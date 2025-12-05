@@ -107,8 +107,8 @@ export function TestimonialsSection() {
 
 
   return (
-    <section className="bg-linear-to-b from-[#2A0019] to-[#3C4C5AD4] py-16 lg:py-12">
-      <div className="  space-y-10">
+    <section className="bg-linear-to-b from-[#2A0019] to-[#3C4C5AD4] py-5 md:py-16 lg:py-12">
+      <div className="md:space-y-10">
         <div className="text-center">
           <span className="inline-block rounded-full bg-purple-100 px-3 py-2 text-xs font-bold bg-linear-to-r from-[#FAC1FD] to-[#F75EFF] silka">
             TESTIMONIALS
@@ -124,7 +124,7 @@ export function TestimonialsSection() {
         <div className="relative flex-1 flex items-center overflow-hidden">
         <div
           ref={scrollContainerRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide w-full"
+          className="flex md:gap-6 overflow-x-auto scrollbar-hide w-full"
           style={{
             scrollBehavior: 'smooth',
             scrollbarWidth: 'none',
@@ -134,7 +134,7 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className="shrink-0"
+              className="shrink-0 scale-50 md:scale-none"
               style={{
                 width: `${CARD_WIDTH}px`,
                 marginLeft: index === 0 ? 'calc(50vw - 360px)' : '0',

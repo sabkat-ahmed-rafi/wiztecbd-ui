@@ -35,6 +35,27 @@ body {
   animation: modal-in 0.35s cubic-bezier(0.21, 0.74, 0.34, 0.99);
 }
 
+
+.marquee-fade {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 55%,
+    black 55%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 55%,
+    black 55%,
+    transparent
+  );
+}
+
+
+
+
 /* Custom checkbox and radio styling */
 input[type="checkbox"],
 input[type="radio"] {
