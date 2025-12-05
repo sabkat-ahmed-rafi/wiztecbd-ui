@@ -8,7 +8,7 @@ import styles from "./growhubs-hero.module.css";
 export function BuiltForCreatorsSection() {
 
   const centerX = 500;
-  const centerY = 250;
+  const centerY = 50;
   const orbitRadius = 360;
 
   return (
@@ -50,6 +50,22 @@ export function BuiltForCreatorsSection() {
         baseY={centerY}
         offset={Math.PI * 1.5}
       />
+
+{/* ✧ Floating Dots Left Side */}
+<div className="absolute left-40 inset-0 z-0 pointer-events-none">
+  <span className="absolute left-10 top-40 text-white text-xl">󠁯•󠁏</span>
+  <span className="absolute left-24 top-64 text-white/70 text-2xl">󠁯•󠁏</span>
+  <span className="absolute left-8 top-96 text-white/40 text-lg">󠁯•󠁏</span>
+  <span className="absolute left-16 top-108 text-white/20 text-lg">󠁯•󠁏</span>
+</div>
+
+{/* ✧ Floating Dots Right Side */}
+<div className="absolute right-40 inset-0 z-0 pointer-events-none">
+  <span className="absolute right-10 top-44 text-white text-lg">󠁯•󠁏</span>
+  <span className="absolute right-24 top-72 text-white/20 text-xl">󠁯•󠁏</span>
+  <span className="absolute right-14 top-96 text-white/50 text-2xl">󠁯•󠁏</span>
+</div>
+
 
       {/* HERO CONTENT */}
       <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
