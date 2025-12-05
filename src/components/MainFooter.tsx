@@ -99,7 +99,7 @@ export function MainFooter() {
         </div>
 
        <div className="absolute bottom-0 left-1/2 -translate-x-1/2  pointer-events-none whitespace-nowrap">
-        <h2 className="text-[5rem] md:text-[12rem] lg:text-[16rem] font-bold leading-none bg-linear-to-r from-[#8A7384] to-white bg-clip-text text-transparent alexandria">
+        <h2 className="text-[5rem] md:text-[9rem] lg:text-[16rem] font-bold leading-none bg-linear-to-r from-[#8A7384] to-white bg-clip-text text-transparent alexandria">
           WiztecBD
         </h2>
        </div>
