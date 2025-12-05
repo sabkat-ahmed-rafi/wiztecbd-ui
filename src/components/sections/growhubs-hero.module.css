@@ -1,0 +1,36 @@
+.ellipseBase {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px); /* Reduced for less giant glow */
+  opacity: 0.45;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Left */
+.ellipse1 {
+  width: 350px;
+  height: 220px;
+  background: radial-gradient(circle, #ffffff, #BB626457);
+}
+
+/* Right */
+.ellipse2 {
+  width: 350px;
+  height: 230px;
+  background: radial-gradient(circle, #ffffff, #BB626457);
+}
+
+/* Middle */
+.ellipse3 {
+  width: 350px;
+  height: 240px;
+  background: radial-gradient(circle, #ffffff, #BB626457);
+}
+
+/* bottom */
+.ellipse4 {
+  width: 350px;
+  height: 240px;
+  background: radial-gradient(circle, #ffffff, #BB626457);
+}

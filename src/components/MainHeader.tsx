@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa";
 import { HiHeart } from "react-icons/hi";
 
 export function MainHeader() {
@@ -6,9 +7,11 @@ export function MainHeader() {
     <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[#6C0443] text-white">
-            <span className="text-lg font-bold">⌂</span>
+        <div className="flex items-center ">
+          <div className="flex h-8 w-8 items-center justify-center rounded-md text-white">
+            <span className="flex h-10 w-10 items-center justify-center rounded-lg text-xl font-bold text-[#6C0443]">
+              <FaArrowUp />
+            </span>
           </div>
           <span className="text-xl font-bold text-[#6C0443]">WiztecBD</span>
         </div>
