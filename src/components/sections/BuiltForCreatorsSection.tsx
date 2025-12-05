@@ -87,7 +87,7 @@ export function BuiltForCreatorsSection() {
           <div className="relative w-full sm:max-w-xl">
             <input
               type="email"
-              placeholder="Enter Your Email Here"
+              placeholder="Enter Your Email"
               className="w-full px-4 pr-36 py-5  bg-[#3B3B4B]  text-white rounded-l-full rounded-r-full"
             />
 
